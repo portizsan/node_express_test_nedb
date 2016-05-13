@@ -19,6 +19,7 @@ router.post('/', function(req, res, next) {
             if (!error) {
                 res.json(result);
             } else {
+                console.log(error)
                 next(error);
             }
         });

@@ -20,7 +20,7 @@ module.exports = {
         db.insert(user, function(err, u) {
             if (!err) {
                 console.log(u._id);
-                callback(u);
+                callback(null, u);
             }
             else {
                 callback(err)
