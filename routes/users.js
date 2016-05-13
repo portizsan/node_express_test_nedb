@@ -15,7 +15,7 @@ router.get('/', function(req, res, next) {
 
 router.post('/', function(req, res, next) {
         var userReq = req.body;
-        console.log(req);
+        console.log(userReq);
         usersPersistence.create(userReq,  function (error, result) {
             if (!error) {
                 res.json(result);
